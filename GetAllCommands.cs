@@ -16,7 +16,7 @@ namespace GetCommand
     public static class GetAllCommands
     {
         [FunctionName("GetAllCommands")]
-        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequestMessage req,
+        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequestMessage req,
             [DocumentDB(
                 databaseName: "ToDoList",
                 collectionName: "Items",

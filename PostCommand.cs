@@ -14,7 +14,7 @@ namespace GetCommand
     public static class PostCommand
     {
         [FunctionName("PostCommand")]
-        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequestMessage req,
+        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function,  "post", Route = null)]HttpRequestMessage req,
              [DocumentDB(
                 databaseName: "ToDoList",
                 collectionName: "Items",
